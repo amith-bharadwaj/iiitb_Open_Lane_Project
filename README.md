@@ -82,7 +82,7 @@ Type the command below to perform synthesis
 ```
 run_synthesis
 ```
-The report generated can be seen below.
+The report and netlist generated can be seen below.
 
 ![Screenshot from 2023-09-10 19-58-37](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/ef50e0f3-818a-4e7d-bbc5-32a7449bc222)
 
