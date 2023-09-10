@@ -60,4 +60,8 @@ It considers gate delays, interconnect delays, and clock skew.
 It includes information about layers, polygons, and other details needed for fabrication.
 
 **Tape-Out:** The GDSII file is sent to a semiconductor foundry for manufacturing.
+
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/6b4e55cb-23f8-4142-9440-c80b0b91876b)
+
+
 </details>
