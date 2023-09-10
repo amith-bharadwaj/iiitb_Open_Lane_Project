@@ -63,5 +63,31 @@ It includes information about layers, polygons, and other details needed for fab
 
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/6b4e55cb-23f8-4142-9440-c80b0b91876b)
 
+## Lab Work
+
+```
+cd OpenLane
+make mount
+./flow.tcl -interactive
+
+```
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/4e41b51f-48fe-4a5e-8f53-5a7c6219d5e5)
+
+```
+package require openlane 0.9
+prep -design picorv32a
+```
+### Synthesis
+Type the command below to perform synthesis
+```
+run_synthesis
+```
+The report generated can be seen below.
+
+![Screenshot from 2023-09-10 19-58-37](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/ef50e0f3-818a-4e7d-bbc5-32a7449bc222)
+
+### Flop Ratio
+
+The flop ratio can be calculated by dividing the number of D flip flops with the total number of cells.Here there are **1596** D Flip Flops and **10104**cells. Therefore the flop ratio is **0.15796**.
 
 </details>
