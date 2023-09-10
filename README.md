@@ -86,6 +86,9 @@ The report and netlist generated can be seen below.
 
 ![Screenshot from 2023-09-10 19-58-37](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/ef50e0f3-818a-4e7d-bbc5-32a7449bc222)
 
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/b125cb7e-af61-4c9f-8116-e10cdaea6eb0)
+
+
 ### Flop Ratio
 
 The flop ratio can be calculated by dividing the number of D flip flops with the total number of cells.Here there are **1596** D Flip Flops and **10104**cells. Therefore the flop ratio is **0.15796**.
