@@ -163,6 +163,12 @@ To zoom the layout,left click and right click for creating a rectangular region,
 
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/d3f8f5cd-bb81-4042-8c3d-84bf1b3ab702)
 
+### Placement Optimization
+
+Optimizing placement using **repeaters** is a key strategy in integrated circuit design to enhance signal integrity over long interconnects. When critical paths exhibit signal degradation due to length, repeaters are strategically inserted to divide the path into shorter segments. This reduces signal delay, mitigates noise, and maintains signal strength. The process involves identifying long interconnects, selecting suitable repeater locations, and sizing the repeaters appropriately.
+
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/67e06343-6e13-4899-acc3-5d6f958d8132)
+
 
 
 </details>
