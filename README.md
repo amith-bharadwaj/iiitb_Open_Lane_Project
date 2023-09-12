@@ -193,6 +193,8 @@ Cell design flow is the systematic process followed in semiconductor engineering
 
 ## Characterization Flow
 
+A configuration file containing models,tech files,spice netlist and simulation commands is given as input to GUNA.This software will generate timing,noise and power models.
+
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/dee73b9b-820d-49ad-86e3-45b170ece5ef)
 
 
