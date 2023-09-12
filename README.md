@@ -94,3 +94,36 @@ The report and netlist generated can be seen below.
 The flop ratio can be calculated by dividing the number of D flip flops with the total number of cells.Here there are **1596** D Flip Flops and **10104**cells. Therefore the flop ratio is **0.15796**.
 
 </details>
+
+<details>
+    
+<summary>DAY-2</summary>
+
+# Good floorplan vs bad floorplan and introduction to library cells
+
+## Floor Planning
+
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/6bfbcf60-9b23-4d1e-bc23-e2c6f518ee3c)
+
+In semiconductor manufacturing, floor planning refers to the initial phase of designing the physical layout of an integrated circuit (IC) on a silicon wafer. This step is crucial in organizing the various components, including transistors, resistors, capacitors, and interconnects, to optimize performance, power consumption, and space utilization.
+
+**Block Placement:** Floor planning involves deciding where to place different functional blocks or modules on the silicon die. These blocks represent specific components like processing units, memory cells, input/output interfaces, and other specialized circuits.
+
+**Interconnect Planning:** It encompasses planning the routes or pathways that will connect various blocks on the chip. Well-designed interconnects are essential for ensuring efficient data flow between different components.
+
+**Power Grid Planning:** Floor planning also addresses the distribution of power across the chip. This includes determining the locations of power sources and how they will be distributed to ensure consistent and reliable power supply to all components.
+
+**Clock Distribution:** Planning the distribution of clock signals is critical for synchronizing operations across different parts of the chip. Proper clock distribution minimizes timing issues and ensures reliable operation.
+
+**Area Allocation:** Deciding how much physical space each block or functional unit should occupy on the die is part of floor planning. This allocation is influenced by factors like performance requirements, power constraints, and manufacturing considerations.
+
+**I/O Planning:** Determining the placement and arrangement of input and output pads or pins is crucial for connecting the chip to external devices.
+
+**Heat Dissipation and Thermal Considerations:** Floor planning also takes into account heat dissipation. Efficient placement of components can help manage the heat generated during operation.
+
+**Design Constraints:** Various constraints, such as area limitations, power budgets, and performance targets, must be considered during floor planning.
+
+**Iterative Process:** Floor planning is an iterative process. Designers often go through multiple iterations to fine-tune the layout based on simulations, performance analysis, and other considerations.
+
+
+</details>
