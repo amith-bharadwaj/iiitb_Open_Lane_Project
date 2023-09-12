@@ -143,7 +143,7 @@ It involves strategically organizing and distributing power supply networks acro
 
 **Routing**: Routing in semiconductor design is the subsequent phase that involves creating physical connections, called metal interconnects or wires, to link the placed components. These connections enable the flow of electrical signals and power throughout the chip, establishing the desired circuit connections and paths. Routing is essential for ensuring proper functionality and performance of the integrated circuit.
 
-### LAB Work
+## LAB Work
 
 To run floor planning, follow the below command after synthesis.
 
