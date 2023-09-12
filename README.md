@@ -103,7 +103,7 @@ The flop ratio can be calculated by dividing the number of D flip flops with the
 
 ## Floor Planning
 
-![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/6bfbcf60-9b23-4d1e-bc23-e2c6f518ee3c)
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/85afa22e-5cb4-4282-a0e6-db6de0dc9ebd)
 
 In semiconductor manufacturing, floor planning refers to the initial phase of designing the physical layout of an integrated circuit (IC) on a silicon wafer. This step is crucial in organizing the various components, including transistors, resistors, capacitors, and interconnects, to optimize performance, power consumption, and space utilization.
 
@@ -142,5 +142,27 @@ It involves strategically organizing and distributing power supply networks acro
 **Placement**:Placement in semiconductor design is the phase where electronic components such as transistors, logic gates, and memory cells are arranged on a silicon wafer or chip. It involves selecting the locations for these components to optimize performance, power efficiency, and thermal characteristics.
 
 **Routing**: Routing in semiconductor design is the subsequent phase that involves creating physical connections, called metal interconnects or wires, to link the placed components. These connections enable the flow of electrical signals and power throughout the chip, establishing the desired circuit connections and paths. Routing is essential for ensuring proper functionality and performance of the integrated circuit.
+
+### LAB Work
+
+To run floor planning, follow the below command after synthesis.
+
+```
+run_floorplan
+```
+after the floor planning process is completed, the def file will be generated, go to the floorplan directory and type the following command to invoke magic for viewing the layout.
+
+```
+ magic -T /home/amith/OpenLane/pdks/vsdstdcelldesign/libs/sky130A.tech lef read /home/amith/OpenLane/designs/picorv32a/runs/RUN_2023.09.11_14.44.38/tmp/merged.max.lef def read /home/amith/OpenLane/designs/picorv32a/runs/RUN_2023.09.11_14.44.38/results/floorplan/picorv32.def &
+```
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/4dcda57a-d609-4320-bf7e-37420eed76bf)
+
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/e71bbc0d-2a58-45ad-9b2c-e12668db118d)
+
+To zoom the layout,left click and right click for creating a rectangular region, press 's' for selecting and 'z' for zooming.In the console window, type 'what' after the selecting the region to get information about that component selected.
+
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/d3f8f5cd-bb81-4042-8c3d-84bf1b3ab702)
+
+
 
 </details>
