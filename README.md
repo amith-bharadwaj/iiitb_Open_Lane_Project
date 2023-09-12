@@ -169,6 +169,18 @@ Optimizing placement using **repeaters** is a key strategy in integrated circuit
 
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/67e06343-6e13-4899-acc3-5d6f958d8132)
 
+### Congestion Aware Placement 
+To perform the placement and view the layout, perform the following commands.
+
+```
+run_placement
+magic -T /home/amith/OpenLane/pdks/vsdstdcelldesign/libs/sky130A.tech lef read /home/amith/OpenLane/designs/picorv32a/runs/RUN_2023.09.11_14.44.38/tmp/merged.max.lef def read /home/amith/OpenLane/designs/picorv32a/runs/RUN_2023.09.12_17.53.47/results/placement/picorv32.def &
+
+```
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/b0da7014-3496-4439-849b-25ec690129ad)
+
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/af23df08-d209-47a7-adc2-b458211786cb)
+
 
 
 </details>
