@@ -125,19 +125,19 @@ In semiconductor manufacturing, floor planning refers to the initial phase of de
 
 **Iterative Process:** Floor planning is an iterative process. Designers often go through multiple iterations to fine-tune the layout based on simulations, performance analysis, and other considerations.
 
-#### Preplacement cells
+### Preplacement cells
 
 In semiconductor chip design, "preplaced cells" (also known as "macrocells" or "hard macros") refer to predefined and fixed blocks of logic or functional elements that are placed on the chip layout before the automated placement and routing process begins. These preplaced cells are typically designed to perform specific functions and are inserted into the chip's layout in predetermined locations.
 
-#### Decoupling Capacitors
+### Decoupling Capacitors
 
 In floor planning for semiconductor chip design, decoupling capacitors play a critical role in ensuring stable and noise-free power distribution to various components on the chip. They are strategically placed in the layout to mitigate voltage fluctuations and reduce electromagnetic interference (EMI).
 
-#### Power Planning
+### Power Planning
 
 It involves strategically organizing and distributing power supply networks across the chip to ensure reliable and efficient power delivery to all functional blocks and components. 
 
-#### Placement and Routing
+### Placement and Routing
 
 **Placement**:Placement in semiconductor design is the phase where electronic components such as transistors, logic gates, and memory cells are arranged on a silicon wafer or chip. It involves selecting the locations for these components to optimize performance, power efficiency, and thermal characteristics.
 
