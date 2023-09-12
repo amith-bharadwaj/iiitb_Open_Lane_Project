@@ -181,6 +181,20 @@ magic -T /home/amith/OpenLane/pdks/vsdstdcelldesign/libs/sky130A.tech lef read /
 
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/af23df08-d209-47a7-adc2-b458211786cb)
 
+## Cell Design Flow
+
+Cell design flow is the systematic process followed in semiconductor engineering to create and optimize individual functional blocks, or cells, that form the building blocks of integrated circuits (ICs).The flow typically begins with specification and architectural design, where the functionality, features, and interfaces of the cell are defined.
+
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/108bd7de-0d04-4099-9aa8-be8615d265c9)
+
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/6c9a93b0-390e-475f-8479-ddfbd49efa80)
+
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/83bde8a6-bdb8-4df3-9671-ed7f49ce15aa)
+
+## Characterization Flow
+
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/dee73b9b-820d-49ad-86e3-45b170ece5ef)
+
 
 
 </details>
