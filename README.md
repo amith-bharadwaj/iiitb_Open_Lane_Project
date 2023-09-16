@@ -275,7 +275,13 @@ Here is a simplified overview of the steps involved in a typical 16-mask CMOS pr
 
 **Active Region Definition (Mask 2):** The second mask defines the areas where the active components of the transistors will be located. These areas will later be doped to create the source and drain regions.
 
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/ac4cda08-3fa8-413e-a7df-c50fa0c0c456)
+
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/94cf5f4f-e060-4e3e-a894-2991e0edf227)
+
 **Gate Formation (Mask 3):** This mask defines the location and shape of the gates of the transistors. The gate is typically made of polysilicon.
+
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/7f36831c-1cc1-4b19-bf87-2dc96ac5cf57)
 
 **Gate Insulation (Mask 4):** This step involves depositing a thin layer of silicon dioxide on top of the gate to insulate it from the channel region.
 
@@ -284,6 +290,9 @@ Here is a simplified overview of the steps involved in a typical 16-mask CMOS pr
 **Channel Formation (Mask 6):** This mask defines the region between the source and drain, which is known as the channel. The channel is what allows or restricts the flow of current.
 
 **Contact Holes (Mask 7):** This step involves etching holes through the insulating layers to allow for electrical connections to the source, drain, and gate.
+
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/fa198202-c1d5-418d-b11c-610752e791b4)
+
 
 **Metal Interconnects (Mask 8):** Metal layers are deposited and patterned to form the interconnects that link various components together.
 
@@ -300,6 +309,8 @@ Here is a simplified overview of the steps involved in a typical 16-mask CMOS pr
 **Test Structures (Mask 14):** Test structures and markers are added to facilitate testing and quality control.
 
 **Final Inspection and Packaging (Mask 15):** The completed wafers are inspected, tested, and then diced into individual chips. These chips are then packaged for use in   electronic devices.
+
+![Screenshot from 2023-09-16 15-47-55](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/57e0c9f3-492e-4f94-a85b-768c5c2ec418)
 
 
 
