@@ -210,4 +210,21 @@ in_fall_thr |	50%
 out_rise_thr |	50% 
 out_fall_thr | 50% 
 
+#### Propagation Delay and Transition Time 
+
+**Propagation Delay** 
+
+The time difference between when the transitional input reaches 50% of its final value and when the output reaches 50% of its final value. Poor choice of threshold values lead to negative delay values. Even thought you have taken good threshold values, sometimes depending upon how good or bad the slew, the dealy might be still +ve or -ve.
+
+**Propagation delay = time(out_thr) - time(in_thr)**
+
+**Transition Time**
+
+The time it takes the signal to move between states is the transition time , where the time is measured between 10% and 90% or 20% to 80% of the signal levels.
+
+**Rise transition time = time(slew_high_rise_thr) - time (slew_low_rise_thr)**
+
+**Low transition time = time(slew_high_fall_thr) - time (slew_low_fall_thr)**
+
+
 </details>
