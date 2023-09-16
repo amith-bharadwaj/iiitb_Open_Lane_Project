@@ -197,6 +197,17 @@ A configuration file containing models,tech files,spice netlist and simulation c
 
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/dee73b9b-820d-49ad-86e3-45b170ece5ef)
 
+#### Timing threshold
 
+defintion |	Value
+-------------- | --------------
+slew_low_rise_thr	| 20% 
+slew_high_rise_thr | 80% 
+slew_low_fall_thr |	20% 
+slew_high_fall_thr |	80% 
+in_rise_thr	| 50% 
+in_fall_thr |	50% 
+out_rise_thr |	50% 
+out_fall_thr | 50% 
 
 </details>
