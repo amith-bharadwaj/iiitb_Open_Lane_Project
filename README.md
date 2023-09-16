@@ -226,5 +226,28 @@ The time it takes the signal to move between states is the transition time , whe
 
 **Low transition time = time(slew_high_fall_thr) - time (slew_low_fall_thr)**
 
-
 </details>
+
+<details>
+    
+<summary>DAY-3</summary>
+
+# DAY-3
+
+## SPICE Deck Creation
+
+A SPICE deck is a text file used to describe an electronic circuit in a format that can be interpreted by SPICE (Simulation Program with Integrated Circuit Emphasis), a widely used software tool for simulating and analyzing electronic circuits. The deck contains information about circuit components (such as resistors, capacitors, transistors, etc.), their connections, and simulation parameters. It also includes commands for specifying the type of analysis to be performed (e.g., transient, AC, DC) and other simulation settings. SPICE decks allow engineers and designers to model and predict the behavior of electronic circuits before physically building them, aiding in the design and optimization process.
+Here we are simulating CMOS Inverter using 250nm node files.
+
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/cccd8eae-e2b2-4907-9fdf-14680d341583)
+
+Follow these commands to simulate the circuit in NG-spice
+
+```
+source cmos.cir
+  run
+  setplot
+  display
+  plot out vs in
+```
+
