@@ -197,7 +197,7 @@ A configuration file containing models,tech files,spice netlist and simulation c
 
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/dee73b9b-820d-49ad-86e3-45b170ece5ef)
 
-#### Timing threshold
+## Timing threshold
 
 defintion |	Value
 -------------- | --------------
@@ -210,15 +210,15 @@ in_fall_thr |	50%
 out_rise_thr |	50% 
 out_fall_thr | 50% 
 
-#### Propagation Delay and Transition Time 
+### Propagation Delay and Transition Time 
 
-**Propagation Delay** 
+#### Propagation Delay 
 
 The time difference between when the transitional input reaches 50% of its final value and when the output reaches 50% of its final value. Poor choice of threshold values lead to negative delay values. Even thought you have taken good threshold values, sometimes depending upon how good or bad the slew, the dealy might be still +ve or -ve.
 
 **Propagation delay = time(out_thr) - time(in_thr)**
 
-**Transition Time**
+#### Transition Time
 
 The time it takes the signal to move between states is the transition time , where the time is measured between 10% and 90% or 20% to 80% of the signal levels.
 
