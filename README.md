@@ -237,17 +237,33 @@ The time it takes the signal to move between states is the transition time , whe
 ## SPICE Deck Creation
 
 A SPICE deck is a text file used to describe an electronic circuit in a format that can be interpreted by SPICE (Simulation Program with Integrated Circuit Emphasis), a widely used software tool for simulating and analyzing electronic circuits. The deck contains information about circuit components (such as resistors, capacitors, transistors, etc.), their connections, and simulation parameters. It also includes commands for specifying the type of analysis to be performed (e.g., transient, AC, DC) and other simulation settings. SPICE decks allow engineers and designers to model and predict the behavior of electronic circuits before physically building them, aiding in the design and optimization process.
-Here we are simulating CMOS Inverter using 250nm node files.
 
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/cccd8eae-e2b2-4907-9fdf-14680d341583)
 
-Follow these commands to simulate the circuit in NG-spice
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/29d37e44-8196-4a08-a7f0-4f67c1301a60)
+
+## Switching Threshold of cmos inverter
+
+The switching threshold of a CMOS (Complementary Metal-Oxide-Semiconductor) inverter is the input voltage at which the output of the inverter transitions from a logic low (0) to a logic high (1), or vice versa. In other words, it's the voltage level at which the inverter changes its output state.
+
+In a basic CMOS inverter, there are two transistors: a PMOS (p-type metal-oxide-semiconductor) transistor and an NMOS (n-type metal-oxide-semiconductor) transistor. When the input voltage is below a certain threshold, the PMOS transistor conducts and the NMOS transistor does not, resulting in a logic high output. Conversely, when the input voltage is above the threshold, the NMOS transistor conducts and the PMOS transistor does not, resulting in a logic low output.
+
+The switching threshold depends on various factors including the characteristics of the transistors, the supply voltage, and the manufacturing process. It is generally determined by the Vth (threshold voltage) of the transistors, which is a parameter that characterizes the voltage at which a transistor begins to conduct.
+
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/521a548e-3bfd-4ccc-87ea-8fecd44c0593)
+
+## LAB Work
+
+Follow the below commands to gitclone vsdstdcelldesign and then run magic.
 
 ```
-source cmos.cir
-  run
-  setplot
-  display
-  plot out vs in
+git clone https://github.com/nickson-jose/vsdstdcelldesign.git
+magic -T sky130A.tech sky130_inv.mag &
 ```
+
+![Screenshot from 2023-09-16 15-02-55](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/0ddd73cf-6171-4439-8182-bc12d6e3fe55)
+
+## Inception of Layout ( A CMOS Fabrication Process)
+
+
 
