@@ -265,5 +265,41 @@ magic -T sky130A.tech sky130_inv.mag &
 
 ## Inception of Layout ( A CMOS Fabrication Process)
 
+A 16-mask CMOS (Complementary Metal-Oxide-Semiconductor) process refers to a semiconductor fabrication process that involves 16 distinct steps (or masks) to create integrated circuits. Each mask defines a specific pattern or layer on the silicon wafer, and these patterns are built up in a series of steps to form the final integrated circuit.
+
+Here is a simplified overview of the steps involved in a typical 16-mask CMOS process:
+
+**Substrate Preparation:** The process begins with a silicon wafer, which serves as the foundation for the integrated circuits. This wafer is typically made of single-crystal silicon.
+
+**Oxide Layer Formation (Mask 1):** The first mask is used to define areas where a thin layer of silicon dioxide (SiO2), also known as oxide, will be grown or deposited. This layer serves as an insulator.
+
+**Active Region Definition (Mask 2):** The second mask defines the areas where the active components of the transistors will be located. These areas will later be doped to create the source and drain regions.
+
+**Gate Formation (Mask 3):** This mask defines the location and shape of the gates of the transistors. The gate is typically made of polysilicon.
+
+**Gate Insulation (Mask 4):** This step involves depositing a thin layer of silicon dioxide on top of the gate to insulate it from the channel region.
+
+**Source and Drain Implantation (Mask 5):** Dopants are introduced into the silicon to create the source and drain regions of the transistors.
+
+**Channel Formation (Mask 6):** This mask defines the region between the source and drain, which is known as the channel. The channel is what allows or restricts the flow of current.
+
+**Contact Holes (Mask 7):** This step involves etching holes through the insulating layers to allow for electrical connections to the source, drain, and gate.
+
+**Metal Interconnects (Mask 8):** Metal layers are deposited and patterned to form the interconnects that link various components together.
+
+**First Metal Contact Holes (Mask 9):** Similar to Step 8, this step involves etching holes through insulating layers to allow for electrical connections to the metal interconnects.
+
+**Metal Contact (Mask 10):** Metal is deposited to make electrical connections between the metal interconnects and the active regions of the transistors.
+
+**Passivation (Mask 11):** A protective layer is added to shield the integrated circuits from environmental factors.
+
+**Bond Pads (Mask 12):** Areas are defined for attaching wires that will connect the integrated circuits to external components.
+
+**Final Metal (Mask 13):** Additional metal layers may be added for complex circuits.
+
+**Test Structures (Mask 14):** Test structures and markers are added to facilitate testing and quality control.
+
+**Final Inspection and Packaging (Mask 15):** The completed wafers are inspected, tested, and then diced into individual chips. These chips are then packaged for use in   electronic devices.
+
 
 
