@@ -312,5 +312,8 @@ Here is a simplified overview of the steps involved in a typical 16-mask CMOS pr
 
 ![Screenshot from 2023-09-16 15-47-55](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/57e0c9f3-492e-4f94-a85b-768c5c2ec418)
 
+## Lab introduction to Sky130 basic layers layout and LEF using inverter
+
+
 
 
