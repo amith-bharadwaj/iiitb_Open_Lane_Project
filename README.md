@@ -314,6 +314,9 @@ Here is a simplified overview of the steps involved in a typical 16-mask CMOS pr
 
 ## Lab introduction to Sky130 basic layers layout and LEF using inverter
 
+    Inverter is, PMOS and NMOS connected together. Gates of both PMOS and NMOS are connected together and given to input. NMOS source connected to ground, PMOS source is connected to VDD.Drains of PMOS and NMOS are connected together and given to the output.From Layout, we see the layers which are required for CMOS inverter.The First layer in skywater130 is localinterconnect layer (locali).
+
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/e4d08cf2-79a6-4b92-86cb-e2cc047cbe7e)
 
 
 
