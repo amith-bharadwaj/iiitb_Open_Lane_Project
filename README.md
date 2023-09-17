@@ -676,6 +676,7 @@ Initial Route Guide Analysis: TritonRoute scrutinizes the directions specified i
 <summary>REFERENCES</summary>
 
 # REFERENCES
+
 1. https://www.vsdiat.com/
 2. https://github.com/kunalg123/vsdflow
 3. https://openlane.readthedocs.io/en/latest/getting_started/installation/installation_ubuntu.html#installation-of-required-packages
