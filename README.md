@@ -336,5 +336,22 @@ This command extracts parasatic capcitances and a file sky130_inv.spice will be 
 ## SKY130 Tech file labs
 We should edit the spice file to do the analysis.
 
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/381c18b4-d103-44b0-93ca-06ed3983f177)
+
+Run it in ngspice by giving the following command.
+
+```
+ngspice sky130_inv.spice
+plot y vs time a
+```
+
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/ebb2f54f-080d-47da-9ce8-3aa0bcaa2460)
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/b0e5e6ef-8b5b-4d4c-88c8-3b33e975a9f6)
+
+## Magic DRC
+
+Magic VLSI (Very Large Scale Integration) is a powerful open-source software tool used in the design and layout of integrated circuits. It provides a user-friendly environment for creating, editing, and analyzing electronic circuits at the transistor level. Magic VLSI offers a range of features, including a versatile and intuitive interface, the ability to handle various technology nodes, and support for both digital and analog circuit design. It also allows for the visualization of the physical layout of a chip, enabling engineers to optimize for performance, area, and power consumption. Additionally, Magic VLSI facilitates compatibility with industry-standard file formats, enhancing its interoperability with other EDA (Electronic Design Automation) tools in the semiconductor industry. Overall, Magic VLSI plays a crucial role in the development of complex integrated circuits, making it an essential tool for VLSI designers and engineers.
+
+
 
 
