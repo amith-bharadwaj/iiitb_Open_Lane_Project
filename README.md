@@ -430,12 +430,153 @@ Now tap using nsubstrate contact, we can see the change in the drc value shown.
     
 <summary>DAY-4</summary>
 
+# Timing Analysis and Clock Tree Synthesis
+
+## Grid into Track Info
+
+To implement our own stdcell,the inout output ports must lie on the intersection of Horizontal and vertical tracks and
+Width and Height of standard cell are odd mutliples of Horizontal track pitch and Vertical track pitch.
+Give the below command to view grids of specific dimensions on layout.
+```
+grid 0.46um 0.34um 0.23um 0.17um
+```
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/58142b9b-96b2-45f0-8a80-1db223df3236)
+
+## Creation of Port Defination
+
+After loading the inverter design, select the required port by double pressing 's' in the region.click on edit and then text.Here we can enter the label.Ensure to check the enable check box.
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/e53a7284-a749-4f3f-9f8f-614951372f1d)
 
-</details>
+## Setting port class and port use attributes
+
+Type the following commands in the console,enter 2 commands at a time after selecting input,output,vdd and ground ports respectively.
+
+```
+port class input
+port use signal
+port class output
+port use signal
+port class inout
+port use power
+port class inout
+port use ground
+```
+To generate the lef file, follow the below command.
+```
+lef write
+
+```
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/9ea3fd4e-29db-4b44-b327-0c2d32dc4f02)
+
+Copy the lef file,sky130_fd_sc_hd_typical.lib, sky130_fd_sc_hd_slow.lib, and sky130_fd_sc_hd_fast.lib files from the libs folder in vsdstdcelldesign to the src folder of picorv32a. And then we need to modify the config.tcl file.
+
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/5359e327-2fa8-474d-8fb3-cd43fc26641f)
+
+Follow the below commands in openlane to run synthesis.
+
+```
+prep -design picorv32a
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+add_lefs -src $lefs
+run_synthesis
+```
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/81606d21-9b2f-4c13-9d60-15f656e1ed91)
+
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/9b8979ab-7fab-4c9a-bd68-e37ddd09b258)
+
+## Delay Tables
+
+Timing is a pivotal parameter that holds significant sway over our cell designs, influencing all other aspects of timing considerations. The delay of a cell is contingent on factors such as input transition and output load. For instance, when a cell (X1) is situated at the end of a lengthy wire (Scenario 1), its delay is affected by unfavorable transitions due to the wire's resistance and capacitance. Conversely, in the case of a shorter wire (Scenario 2), the delay differs as the transition is less adverse. This demonstrates the sensitivity of delay to varying conditions, even for identical cells. Additionally, the output load also plays a role in shaping delay characteristics. To maintain signal integrity during buffer insertion, VLSI engineers have established specific guidelines, emphasizing consistent buffer sizing at each level. Despite this, delays may fluctuate depending on the load they drive. To address this, engineers introduced "delay tables," which contain 2D arrays encompassing input slew and load capacitance values, each associated with various buffer sizes. These tables serve as essential timing models for the design process. Algorithms interact with these tables, using provided input slew and load capacitance values to calculate corresponding delay values for the buffers. In cases where precise delay data is unavailable, interpolation techniques are employed. These techniques identify the nearest available data points and extrapolate from them to estimate the required delay values.
+
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/c12ca424-a636-46de-a95f-af4bd0f999bd)
+
+Let us perform floor plan and placement.
+
+```
+run_floorplan
+run_placement
+```
+Let us invoke magic from the results/placement directory
+
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/35bb6f08-f83b-4a70-8438-ad89f5793dce)
+
+## Timing Analysis
+
+Setup time is a crucial concept in digital electronics and refers to the minimum amount of time that a data input signal must be stable and valid before the clock signal arrives for the flip-flop or latch to capture that data. In simpler terms, it is the time duration between when the input data is available and when the clock edge arrives, ensuring that the data is correctly registered by the flip-flop or latch. Failing to meet the setup time requirement can result in erroneous or unpredictable behavior in the digital circuit. It's a fundamental parameter for ensuring reliable operation of synchronous digital systems.
+
+Metastability is a phenomenon that can occur in digital electronic circuits, particularly in synchronous systems. It arises when a digital flip-flop or latch receives a signal that arrives very close to the clock edge. In this narrow time window, the signal may oscillate unpredictably between the high and low states, causing the flip-flop or latch to have difficulty in determining the correct state to latch onto.
+
+Designers take measures to minimize the likelihood of metastability by ensuring that signals meet setup and hold time requirements and by using techniques like synchronizers to reduce the probability of metastable events. However, it's important to note that metastability is an inherent part of digital electronics and can never be entirely eliminated, only managed.
+
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/f1c3eb96-63ed-45db-9e53-0f3128977e64)
+
+### Clock Jitter
+
+Clock jitter is a phenomenon in digital systems that refers to the variations in the timing of a clock signal. It is characterized by small, random fluctuations in the arrival times of clock edges. These fluctuations can occur due to various factors, such as electronic noise, power supply fluctuations, and imperfections in the clock generation circuitry. Clock jitter can have significant implications for the performance of digital circuits, as it can lead to timing uncertainty and ultimately affect the stability and accuracy of data processing. Designers employ techniques like jitter reduction circuits and high-quality clock sources to mitigate the impact of jitter and ensure reliable operation of digital systems. Managing clock jitter is especially crucial in high-speed and precision applications, where precise timing is paramount.
 
 
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/0f04283f-369f-48da-a32b-a4e7296e271e)
 
 
+## Clock Tree Synthesis (CTS)
+Clock Tree Synthesis (CTS) is a crucial step in the physical design of integrated circuits (ICs), especially for synchronous digital systems. It involves the generation of an optimized network of clock distribution lines (referred to as the "clock tree") that evenly and efficiently distributes the clock signal to all sequential elements (like flip-flops) across the chip.
 
+Here's a breakdown of the key steps involved in Clock Tree Synthesis:
+
+**Clock Signal Generation:** The first step is generating the primary clock signal, usually from an external crystal oscillator or a phase-locked loop (PLL). This signal serves as the reference clock for the entire system.
+
+**Buffer Insertion:** The clock signal from step one is generally weak and may not be able to drive all the sequential elements in the design directly. Therefore, buffers (usually in the form of inverters) are inserted strategically along the clock path to strengthen the signal.
+
+**Clock Distribution Network:** This step involves creating a network of clock lines that originate from the clock source and spread out across the chip, reaching every sequential element. The goal is to minimize clock skew (variation in arrival times of the clock signal) and ensure that all elements receive the clock signal simultaneously.
+
+**Balancing Delays:** The clock tree synthesis tool considers factors such as wire lengths, resistance, and capacitance to balance the delays in the clock distribution network. This ensures that the clock arrives at all elements at the same time, reducing setup and hold time violations.
+
+**Optimization for Power and Area:** CTS tools aim to minimize power consumption and area usage while maintaining good clock distribution characteristics. This may involve techniques like buffer sizing and placement optimization.
+
+**Clock Gating:** In some designs, clock gating elements are added during CTS. These elements can selectively enable or disable clock signals to specific parts of the design, conserving power when those parts are not in use.
+
+**Verification and Analysis:** After generating the clock tree, it's crucial to perform extensive verification and analysis. This includes checks for clock skew, setup and hold time violations, and power consumption.
+
+**Iterative Process:** Clock Tree Synthesis is often an iterative process. Designers may need to make adjustments to the clock tree, such as buffer insertion or resizing, to meet timing and power constraints.
+
+### Cross Talk
+
+Cross talk in VLSI (Very Large Scale Integration) refers to the unwanted interference or coupling of signals between adjacent conductors or traces on a printed circuit board (PCB) or within an integrated circuit (IC). This interference can lead to incorrect or degraded signal integrity and can potentially result in malfunctions or errors in the functioning of the circuit.
+
+Cross talk can lead to various issues:
+
+**Signal Degradation:** The interference can distort the original signal, potentially making it difficult for the receiver to correctly interpret the data.
+
+**Timing Violations:** Cross talk can lead to timing violations, where signals may arrive at the receiver with incorrect timing, violating setup and hold time requirements.
+
+**Increased Noise:** The interference can introduce additional noise into the system, reducing the signal-to-noise ratio and potentially leading to errors.
+
+**Reduced Signal Integrity:** In extreme cases, cross talk can lead to complete signal integrity failure, resulting in malfunctioning of the circuit.
+
+### Clock Net Shielding
+
+Clock net shielding is a technique used in VLSI (Very Large Scale Integration) design to minimize the interference and cross talk that can occur between the clock signal and other adjacent signal traces on a printed circuit board (PCB) or within an integrated circuit (IC). It involves physically isolating the clock signal traces from other signal traces by placing a shield, typically a metal layer, between them. This shield acts as a barrier, reducing the capacitive and inductive coupling that can occur between neighboring traces. By implementing clock net shielding, designers can improve the integrity and reliability of the clock signal, ensuring that it reaches its destination with minimal distortion or interference, which is critical for the proper functioning of synchronous digital systems.
+
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/c26eda2c-3647-4816-a7fe-6749c35bae81)
+
+## LAB Work
+```
+run_cts
+```
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/8a26df72-22ba-453e-9103-ebd0a65e5176)
+
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/2027a709-0daf-48b9-94c3-4916e88cb332)
+
+Here we can observe that there is no violation.From now on post cts analysis is performed by openroad within the openlane flow .In openroad, execute the following commands
+```
+openroad
+read_lef <path of merge.nom.lef>
+read_def <path of def>
+write_db pico_cts.db
+read_db pico_cts.db
+read_verilog /home/parallels/OpenLane/designs/picorv32a/runs/RUN_09-09_11-20/results/synthesis/picorv32a.v
+read_liberty $::env(LIB_SYNTH_COMPLETE)
+read_sdc /home/parallels/OpenLane/designs/picorv32a/src/my_base.sdc
+set_propagated_clock (all_clocks)
+report_checks -path_delay min_max -format full_clock_expanded -digits 4
+```
