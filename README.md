@@ -620,6 +620,21 @@ Design Rule Checking (DRC) is a crucial step in the process of designing integra
 
 ## Power Distribution Network
 
+### Standard cell power
+
+Standard cell power, in the context of integrated circuit (IC) design, refers to the amount of electrical energy consumed or dissipated by standard cells within a chip. Standard cells are pre-designed and pre-characterized logic cells that can be combined to form complex digital circuits. Power consumption is a critical consideration in IC design, as it affects factors like battery life, heat dissipation, and overall system efficiency. Designers aim to optimize standard cell power by selecting cells with appropriate voltage thresholds, utilizing power-saving techniques like clock gating or power gating, and carefully managing the placement and routing of cells to minimize capacitance and switching activity. Additionally, low-power design methodologies, such as using specialized low-power libraries and optimizing for different power modes, are employed to further enhance energy efficiency in the final chip.
+
+The input def file for the power distribution network is design_cts.def. PDN creates power rings, stripes, and rails. Power is drawn from VDD and VSS pads to power rings, and then horizontal and vertical stripes connected to the rings distribute power. Rings are linked to standard cells, providing them with power. To ensure proper powering of the standard cells, they are designed with a height that is multiples of the vertical tracks, with a track pitch of 2.72. Adhering to these conditions is crucial. Definitions for straps and rails are specified. In this design, straps are on metal layers 4 and 5, while standard cell rails are on metal layer 1. Vias are used to connect across the layers as needed.
+
+![Screenshot from 2023-09-17 19-31-35](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/495d315e-d7c1-4385-b696-ca46dac1967c)
+
+### Routing
+
+Routing in the context of integrated circuit (IC) design refers to the process of creating the physical connections between various components and functional blocks on a semiconductor chip. These connections are established through metal traces or wires that carry electrical signals. The goal of routing is to ensure that signals can flow seamlessly between different parts of the chip, allowing it to perform its intended functions. This process involves determining the optimal paths for the interconnects, taking into account factors such as signal integrity, timing constraints, and area utilization. Advanced algorithms and tools are employed to automate and optimize the routing process, ensuring that the layout meets design specifications and is ready for fabrication. Effective routing is essential for the successful operation of complex integrated circuits in various electronic devices.
+
+
+TritonRoute, the detailed router module in OpenROAD, is built upon the open-source detailed router, TritonRoute, and comprises various essential components. These include pin access analysis, track assignment, initial detailed routing, search and repair, and a DRC engine. Although initially inspired by the ISPD-2018 initial detailed routing contest, TritonRoute's current framework is distinct, developed from the ground up, and geared towards an industry-oriented, scalable, and adaptable workflow. It offers a LEF/DEF interface adhering to industry standards, with support for ISPD-2018 and ISPD-2019 contest-compatible route guide format. Global routing provides an estimate of required routes, while detailed routing encompasses the actual wire routing for manufacturability. Global routing assesses the number of available versus required routing resources, segmenting the entire floorplan into evenly sized logical elements, or 'Buckets.' It then evaluates the available and required resources on each metal level, considering the number of pins within the bucket and its immediate vicinity. This information is used to calculate a ratio to ascertain if there is overflow. If multiple buckets in a specific area experience overflow, it signifies congestion in that area.
+
 
     
 </details>
