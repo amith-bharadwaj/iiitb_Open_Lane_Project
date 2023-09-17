@@ -352,6 +352,23 @@ plot y vs time a
 
 Magic VLSI (Very Large Scale Integration) is a powerful open-source software tool used in the design and layout of integrated circuits. It provides a user-friendly environment for creating, editing, and analyzing electronic circuits at the transistor level. Magic VLSI offers a range of features, including a versatile and intuitive interface, the ability to handle various technology nodes, and support for both digital and analog circuit design. It also allows for the visualization of the physical layout of a chip, enabling engineers to optimize for performance, area, and power consumption. Additionally, Magic VLSI facilitates compatibility with industry-standard file formats, enhancing its interoperability with other EDA (Electronic Design Automation) tools in the semiconductor industry. Overall, Magic VLSI plays a crucial role in the development of complex integrated circuits, making it an essential tool for VLSI designers and engineers.
 
+### Design Rule Check
 
+DRC, or Design Rule Check, is a critical step in the process of designing integrated circuits (ICs). It is a set of predefined geometric and electrical constraints that ensure the manufacturability and functionality of the chip. During DRC, the layout of the IC is examined to verify if it complies with these specified rules. This involves checking parameters like minimum spacing between elements, width of conductors, and alignment of components. DRC helps catch potential issues early in the design process, preventing costly errors that could lead to fabrication defects or performance issues. It is an indispensable part of the semiconductor design flow, ensuring that the final chip design adheres to the requirements of the fabrication process.
 
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/ff448c4f-e45d-44dc-b0f7-5c4410dadb76)
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/7e1eb184-6856-46b0-936e-84b46f5cc5df)
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/4962d5a7-3db4-4c5d-ad40-abc7f8477081)
 
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/478e2af2-d708-4a2b-b3a2-97d1d0c431a3)
+
+![Screenshot from 2023-09-17 10-04-32](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/855b1011-7c6b-4565-952b-b12d9add694b)
+
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/7d0b3202-2196-457d-8958-337983c1f445)
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/d724e9bd-9ea5-4396-b861-b80774deda35)
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/bdbdbe32-0944-4835-95d8-a1fba929da5a)
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/48d41705-7b2e-4a64-93dc-1beab8efedef)
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/b312c55a-0e4c-473d-b27a-ee52a6c38bdc)
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/cce2802f-0aef-4d33-8a30-56df59b7cceb)
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/36ef0072-2723-469b-beed-9b4876124293)
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/45194eac-2ec6-4a70-ad82-452d01976e03)
