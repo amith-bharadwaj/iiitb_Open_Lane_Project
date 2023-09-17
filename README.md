@@ -390,11 +390,22 @@ we need to modify the sky130A.tech file for making the corrections. Use gedit an
 Now we need to reload the mag file into the magic layout window. Now we can see the modified layout.And then type ```
 drc runcheck ``` in the console window.
 
+
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/36ef0072-2723-469b-beed-9b4876124293)
+
 open the sky130A techfile using gedit, and search for cifmaxwidth and make the changes as shown in the pictures below.
+
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/45194eac-2ec6-4a70-ad82-452d01976e03)
+
+First create a box around cell nwell6 , Now in tkcon terminal type below commands:
+
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/6dc89c78-a5b6-4a40-ab68-43fac06382ba)
+
+Make modifictions to the tech file as shown below.
+
 ![Screenshot from 2023-09-17 12-25-57](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/3ec70738-d34a-4ccf-bc6c-b0d99518d10e)
+
+
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/944ac4a6-4bff-4eb6-adb5-2ce07b195b19)
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/b7214a21-094d-438a-bc97-da9e1e05fdf8)
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/cdf71df2-ebd2-46d0-be9a-4272b44df40d)
