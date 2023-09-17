@@ -366,11 +366,15 @@ tar xfz drc_tests.tgz
 ```
 
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/ff448c4f-e45d-44dc-b0f7-5c4410dadb76)
+
+let us check the files in the directory.
+
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/7e1eb184-6856-46b0-936e-84b46f5cc5df)
+Let us view the layout of met3.mag on magic
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/4962d5a7-3db4-4c5d-ad40-abc7f8477081)
-
+In the console window give the command ```drc why ``` to know if errors are there are what are those errors associated with the selected object.
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/478e2af2-d708-4a2b-b3a2-97d1d0c431a3)
-
+Draw a box with met3 ,move the pointer to the colour box on the right panel, use 'p' to fill the box with the selected met3 layer.
 ![Screenshot from 2023-09-17 10-04-32](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/855b1011-7c6b-4565-952b-b12d9add694b)
 
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/7d0b3202-2196-457d-8958-337983c1f445)
