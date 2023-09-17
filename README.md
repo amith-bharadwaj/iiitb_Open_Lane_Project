@@ -593,10 +593,6 @@ Here below we can see the hold and setup slack.
 <details>
     
 <summary>DAY-5</summary>
-
-
-
-<details>
     
 ## Maze Routing and Lee's Algorithm
 
