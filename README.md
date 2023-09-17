@@ -356,6 +356,15 @@ Magic VLSI (Very Large Scale Integration) is a powerful open-source software too
 
 DRC, or Design Rule Check, is a critical step in the process of designing integrated circuits (ICs). It is a set of predefined geometric and electrical constraints that ensure the manufacturability and functionality of the chip. During DRC, the layout of the IC is examined to verify if it complies with these specified rules. This involves checking parameters like minimum spacing between elements, width of conductors, and alignment of components. DRC helps catch potential issues early in the design process, preventing costly errors that could lead to fabrication defects or performance issues. It is an indispensable part of the semiconductor design flow, ensuring that the final chip design adheres to the requirements of the fabrication process.
 
+### LAB Work
+
+Follow the below commands to extract the drc test files
+
+```
+wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
+tar xfz drc_tests.tgz
+```
+
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/ff448c4f-e45d-44dc-b0f7-5c4410dadb76)
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/7e1eb184-6856-46b0-936e-84b46f5cc5df)
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/4962d5a7-3db4-4c5d-ad40-abc7f8477081)
