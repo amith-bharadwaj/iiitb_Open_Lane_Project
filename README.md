@@ -314,9 +314,27 @@ Here is a simplified overview of the steps involved in a typical 16-mask CMOS pr
 
 ## Lab introduction to Sky130 basic layers layout and LEF using inverter
 
-Inverter is, PMOS and NMOS connected together. Gates of both PMOS and NMOS are connected together and given to input. NMOS source connected to ground, PMOS source is connected to VDD.Drains of PMOS and NMOS are connected together and given to the output.From Layout, we see the layers which are required for CMOS inverter.The First layer in skywater130 is localinterconnect layer (locali).
+Inverter is designed by, PMOS and NMOS connected together. Gates of both PMOS and NMOS are connected together and given to input. NMOS source connected to ground, PMOS source is connected to VDD.Drains of PMOS and NMOS are connected together and given to the output.From Layout, we see the layers which are required for CMOS inverter.The First layer in skywater130 is localinterconnect layer (locali).
 
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/e4d08cf2-79a6-4b92-86cb-e2cc047cbe7e)
+
+### Spice Extraction in Magic
+]
+Folllow the below command for creating extraction file
+```
+extract all
+```
+sky130_inv.ext file will be  created
+
+```
+ext2spice cthresh 0 rthresh 0
+```
+This command extracts parasatic capcitances and a file sky130_inv.spice will be created.
+
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/16f821d2-561c-4657-9fc6-76617d62fd36)
+
+## SKY130 Tech file labs
+We should edit the spice file to do the analysis.
 
 
 
