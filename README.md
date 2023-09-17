@@ -665,6 +665,11 @@ Initial Route Guide Analysis: TritonRoute scrutinizes the directions specified i
 
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/d9c14a20-5322-4838-900d-ac7fe354df6e)
 
+The inputs for Triton's detailed route encompass the LEF file, DEF file, and preprocessed route guides. These components serve as the foundation for generating optimized wire lengths and minimizing via counts in the routing solutions. Additionally, the constraint files play a pivotal role, encompassing route guide honoring, connectivity constraints, and adherence to design rules.
+
+An 'Access Point' denotes a specific point on the route guide, aligned with the grid, and serves as a crucial link to connect with lower layer segments, upper layer pins, or IO ports. On the other hand, an 'Access Point Cluster' aggregates all access points originating from lower layer segments, upper layer guides, pins, or IO ports. This collective cluster significantly streamlines the routing process, enhancing overall efficiency and effectiveness.
+
+
 </details>
 
 <details>
