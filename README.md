@@ -594,13 +594,9 @@ Here below we can see the hold and setup slack.
     
 <summary>DAY-5</summary>
 
-Maze routing is a method used in electronic design automation (EDA) and integrated circuit (IC) routing to find a path for interconnects (wires or traces) between different components on a chip. The term "maze" refers to the grid-like structure that represents the routing area.
-
-Lee's algorithm, also known as Lee's Wave Algorithm, is a widely used algorithm for maze routing. It's named after its creator, Chung Laung Lee. Here's an explanation of both concepts:
-
 **Maze Routing:**
 
-In electronic design, the routing phase involves establishing connections between various components like transistors, gates, and other functional blocks. This is done using metal traces or wires that carry signals between these elements. Maze routing deals with finding an optimal path through a maze-like grid of obstacles to connect a source point to a destination point.
+In electronic design, the routing phase involves establishing connections between various components like transistors, gates, and other functional blocks. This is done using metal traces or wires that carry signals between these elements. Maze routing deals with finding an optimal path through a maze-like grid of obstacles to connect a source point to a destination point.Maze routing is a method used in electronic design automation (EDA) and integrated circuit (IC) routing to find a path for interconnects (wires or traces) between different components on a chip. The term "maze" refers to the grid-like structure that represents the routing area.
 
 **Lee's Algorithm:**
 
@@ -635,6 +631,12 @@ Routing in the context of integrated circuit (IC) design refers to the process o
 
 TritonRoute, the detailed router module in OpenROAD, is built upon the open-source detailed router, TritonRoute, and comprises various essential components. These include pin access analysis, track assignment, initial detailed routing, search and repair, and a DRC engine. Although initially inspired by the ISPD-2018 initial detailed routing contest, TritonRoute's current framework is distinct, developed from the ground up, and geared towards an industry-oriented, scalable, and adaptable workflow. It offers a LEF/DEF interface adhering to industry standards, with support for ISPD-2018 and ISPD-2019 contest-compatible route guide format. Global routing provides an estimate of required routes, while detailed routing encompasses the actual wire routing for manufacturability. Global routing assesses the number of available versus required routing resources, segmenting the entire floorplan into evenly sized logical elements, or 'Buckets.' It then evaluates the available and required resources on each metal level, considering the number of pins within the bucket and its immediate vicinity. This information is used to calculate a ratio to ascertain if there is overflow. If multiple buckets in a specific area experience overflow, it signifies congestion in that area.
 
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/dae611fe-52f9-4217-ab73-0f09bec76445)
+
+Layout in magic tool post routing can be seen below:
+
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/58a47157-5906-4765-a4bc-80b22f4ceb1a)
+
+![Screenshot from 2023-09-17 19-38-40](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/71caad31-28e5-4b00-be0f-821274cb4d09)
 
     
-</details>
