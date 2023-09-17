@@ -397,11 +397,12 @@ open the sky130A techfile using gedit, and search for cifmaxwidth and make the c
 
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/45194eac-2ec6-4a70-ad82-452d01976e03)
 
-First create a box around cell nwell6 , Now in tkcon terminal type below commands:
+
+Make modifictions to the tech file as shown below.
 
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/6dc89c78-a5b6-4a40-ab68-43fac06382ba)
 
-Make modifictions to the tech file as shown below.
+First create a box around cell nwell6 , Now in tkcon terminal type below commands:
 
 ![Screenshot from 2023-09-17 12-25-57](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/3ec70738-d34a-4ccf-bc6c-b0d99518d10e)
 
