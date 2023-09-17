@@ -589,3 +589,37 @@ Here below we can see the hold and setup slack.
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/4b6dcaf0-e2b8-4bdd-9290-dab55f79d49f)
 
 </details>
+
+<details>
+    
+<summary>DAY-5</summary>
+
+Maze routing is a method used in electronic design automation (EDA) and integrated circuit (IC) routing to find a path for interconnects (wires or traces) between different components on a chip. The term "maze" refers to the grid-like structure that represents the routing area.
+
+Lee's algorithm, also known as Lee's Wave Algorithm, is a widely used algorithm for maze routing. It's named after its creator, Chung Laung Lee. Here's an explanation of both concepts:
+
+**Maze Routing:**
+
+In electronic design, the routing phase involves establishing connections between various components like transistors, gates, and other functional blocks. This is done using metal traces or wires that carry signals between these elements. Maze routing deals with finding an optimal path through a maze-like grid of obstacles to connect a source point to a destination point.
+
+**Lee's Algorithm:**
+
+Lee's algorithm is a path-finding algorithm used in maze routing. It's a breadth-first search (BFS) based algorithm. The basic idea is to start from the source point and explore the adjacent cells in layers, expanding outward until the destination point is reached. The algorithm works as follows:
+
+**Initialization**: Mark the source cell with a value of 0. Then, mark all adjacent cells with a value of 1, and continue this process, incrementing the value by 1 for each layer of adjacent cells.
+
+**Wave Expansion:** Propagate the wavefront outwards from the source cell, incrementing the value of each cell as the wavefront expands.
+
+**Routing:** Once the wavefront reaches the destination cell, follow the decreasing values back from the destination to the source, which traces the optimal path.
+
+![Screenshot from 2023-09-17 19-24-35](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/a8fa8ce3-2f11-4c49-b755-9da501df488c)
+
+## Design Rule Check
+
+Design Rule Checking (DRC) is a crucial step in the process of designing integrated circuits (ICs) and other electronic devices. It involves a thorough examination of the layout or design of a chip to ensure that it adheres to a set of predefined rules and constraints specified by the semiconductor fabrication process. These rules encompass various aspects, including minimum feature sizes, spacing between elements, metal layer configurations, and other geometric constraints. The purpose of DRC is to catch and rectify potential errors or violations that could lead to fabrication issues or electrical malfunctions. It serves as a quality control measure to guarantee that the design meets the precise specifications required for successful manufacturing and reliable performance of the final IC.
+
+## Power Distribution Network
+
+
+    
+</details>
