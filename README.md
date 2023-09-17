@@ -378,6 +378,9 @@ Draw a box with met3 ,move the pointer to the colour box on the right panel, use
 ![Screenshot from 2023-09-17 10-04-32](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/855b1011-7c6b-4565-952b-b12d9add694b)
 type the command ``` cif see VIA2 ```
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/7d0b3202-2196-457d-8958-337983c1f445)
+
+## Load Sky130 tech rules for drc challenges
+
 Let us load the poly.mag file on magic layout window.     
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/d724e9bd-9ea5-4396-b861-b80774deda35)
 zoom in, select the box between the contacts and type 'box' in the console window to know the dimensions. 
