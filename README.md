@@ -426,3 +426,16 @@ After reloading the magic layout window,run the drc commands as shown below, whe
 Now tap using nsubstrate contact, we can see the change in the drc value shown.
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/59c57631-43c9-4a11-a1f9-d0ff20da0ff5)
 
+<details>
+    
+<summary>DAY-4</summary>
+
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/58142b9b-96b2-45f0-8a80-1db223df3236)
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/e53a7284-a749-4f3f-9f8f-614951372f1d)
+
+</details>
+
+
+
+
+
