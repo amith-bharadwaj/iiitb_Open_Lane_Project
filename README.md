@@ -639,4 +639,24 @@ Layout in magic tool post routing can be seen below:
 
 ![Screenshot from 2023-09-17 19-38-40](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/71caad31-28e5-4b00-be0f-821274cb4d09)
 
-    
+### Triton Route Features
+
+#### Preprocessed Route Guides
+
+ritonRoute performs the initial detailed route while giving due respect to preprocessed route guides, which are obtained after the global/fast route. The adherence to these guides is a crucial aspect. This involves a series of actions:
+
+Initial Route Guide Analysis: TritonRoute scrutinizes the directions specified in the preferred route guides. If any non-directional routing guides are identified, it decomposes them into unit widths.
+
+**Guide Splitting:** In cases where non-directional routing guides are encountered, TritonRoute segments them into unit widths, streamlining the routing process.
+
+**Guide Merging:** TritonRoute combines guides that are orthogonal (touching guides) to the preferred guides, further optimizing the routing process.
+
+**Guide Bridging:** When TritonRoute comes across guides that run parallel to the preferred routing guides, it introduces an additional layer to bridge them, ensuring efficient routing within the preprocessed guides.
+
+**Route guides** are meticulously followed to ensure inter-guide connectivity. The prerequisites for preprocessed route guides are that they must possess unit width and align with the predefined direction. The orientation of the metal ensures minimum capacitances.
+
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/ac65188e-bd85-499a-a620-4d2104748144)
+
+### Inter guide connectivity and intra-inter layer routing
+
+
