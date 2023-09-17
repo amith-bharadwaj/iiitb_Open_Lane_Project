@@ -407,7 +407,11 @@ First create a box around cell nwell6 , Now in tkcon terminal type below command
 ![Screenshot from 2023-09-17 12-25-57](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/3ec70738-d34a-4ccf-bc6c-b0d99518d10e)
 
 
+
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/944ac4a6-4bff-4eb6-adb5-2ce07b195b19)
+
+Make modifications to the sky130A tech file as shown below.
+
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/b7214a21-094d-438a-bc97-da9e1e05fdf8)
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/cdf71df2-ebd2-46d0-be9a-4272b44df40d)
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/ff8be22a-e68d-4a15-a4ea-68c92b725525)
