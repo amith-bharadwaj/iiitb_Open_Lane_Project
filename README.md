@@ -414,7 +414,12 @@ Make modifications to the sky130A tech file as shown below.
 
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/b7214a21-094d-438a-bc97-da9e1e05fdf8)
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/cdf71df2-ebd2-46d0-be9a-4272b44df40d)
+
+After reloading the magic layout window,run the drc commands as shown below, when we zoom in, we can find the regions having errors.
+
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/ff8be22a-e68d-4a15-a4ea-68c92b725525)
 ![Screenshot from 2023-09-17 12-40-27](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/c17608a7-3856-4a39-8aed-dc89bf33b90b)
+
+Now tap using nsubstrate contact, we can see the change in the drc value shown.
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/59c57631-43c9-4a11-a1f9-d0ff20da0ff5)
 
