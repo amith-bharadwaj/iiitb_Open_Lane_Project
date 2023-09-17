@@ -426,10 +426,12 @@ After reloading the magic layout window,run the drc commands as shown below, whe
 Now tap using nsubstrate contact, we can see the change in the drc value shown.
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/59c57631-43c9-4a11-a1f9-d0ff20da0ff5)
 
-<details>
+</details>
     
 <summary>DAY-4</summary>
 
+<details>
+    
 # Timing Analysis and Clock Tree Synthesis
 
 ## Grid into Track Info
@@ -580,3 +582,9 @@ read_sdc /home/parallels/OpenLane/designs/picorv32a/src/my_base.sdc
 set_propagated_clock (all_clocks)
 report_checks -path_delay min_max -format full_clock_expanded -digits 4
 ```
+Here below we can see the hold and setup slack.
+
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/b70f371d-caac-42f8-a434-3bfa15993d46)
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/4b6dcaf0-e2b8-4bdd-9290-dab55f79d49f)
+
+</details>
