@@ -594,6 +594,12 @@ Here below we can see the hold and setup slack.
     
 <summary>DAY-5</summary>
 
+
+
+<details>
+    
+## Maze Routing and Lee's Algorithm
+
 **Maze Routing:**
 
 In electronic design, the routing phase involves establishing connections between various components like transistors, gates, and other functional blocks. This is done using metal traces or wires that carry signals between these elements. Maze routing deals with finding an optimal path through a maze-like grid of obstacles to connect a source point to a destination point.Maze routing is a method used in electronic design automation (EDA) and integrated circuit (IC) routing to find a path for interconnects (wires or traces) between different components on a chip. The term "maze" refers to the grid-like structure that represents the routing area.
@@ -658,5 +664,23 @@ Initial Route Guide Analysis: TritonRoute scrutinizes the directions specified i
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/ac65188e-bd85-499a-a620-4d2104748144)
 
 ### Inter guide connectivity and intra-inter layer routing
+
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/fa255046-9ed4-470a-97e0-d9b0c24f7bb2)
+
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/d9c14a20-5322-4838-900d-ac7fe354df6e)
+
+</details>
+
+<details>
+    
+<summary>REFERENCES</summary>
+
+# REFERENCES
+1. https://www.vsdiat.com/
+2. https://github.com/kunalg123/vsdflow
+3. https://openlane.readthedocs.io/en/latest/getting_started/installation/installation_ubuntu.html#installation-of-required-packages
+4. https://github.com/The-OpenROAD-Project/OpenLane
+
+</details>
 
 
