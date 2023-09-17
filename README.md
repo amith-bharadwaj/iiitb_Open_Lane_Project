@@ -372,3 +372,12 @@ DRC, or Design Rule Check, is a critical step in the process of designing integr
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/cce2802f-0aef-4d33-8a30-56df59b7cceb)
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/36ef0072-2723-469b-beed-9b4876124293)
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/45194eac-2ec6-4a70-ad82-452d01976e03)
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/6dc89c78-a5b6-4a40-ab68-43fac06382ba)
+![Screenshot from 2023-09-17 12-25-57](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/3ec70738-d34a-4ccf-bc6c-b0d99518d10e)
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/944ac4a6-4bff-4eb6-adb5-2ce07b195b19)
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/b7214a21-094d-438a-bc97-da9e1e05fdf8)
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/cdf71df2-ebd2-46d0-be9a-4272b44df40d)
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/ff8be22a-e68d-4a15-a4ea-68c92b725525)
+![Screenshot from 2023-09-17 12-40-27](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/c17608a7-3856-4a39-8aed-dc89bf33b90b)
+![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/59c57631-43c9-4a11-a1f9-d0ff20da0ff5)
+
