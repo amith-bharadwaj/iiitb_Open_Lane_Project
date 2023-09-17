@@ -376,13 +376,19 @@ In the console window give the command ```drc why ``` to know if errors are ther
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/478e2af2-d708-4a2b-b3a2-97d1d0c431a3)
 Draw a box with met3 ,move the pointer to the colour box on the right panel, use 'p' to fill the box with the selected met3 layer.
 ![Screenshot from 2023-09-17 10-04-32](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/855b1011-7c6b-4565-952b-b12d9add694b)
-
+type the command ``` cif see VIA2 ```
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/7d0b3202-2196-457d-8958-337983c1f445)
+Let us load the poly.mag file on magic layout window.     
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/d724e9bd-9ea5-4396-b861-b80774deda35)
+zoom in, select the box between the contacts and type 'box' in the console window to know the dimensions. 
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/bdbdbe32-0944-4835-95d8-a1fba929da5a)
+we need to modify the sky130A.tech file for making the corrections. Use gedit and modify the techfile as below.
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/48d41705-7b2e-4a64-93dc-1beab8efedef)
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/b312c55a-0e4c-473d-b27a-ee52a6c38bdc)
+Now we need to reload the mag file into the magic layout window. Now we can see the modified layout.And then type ```
+drc runcheck ``` in the console window.
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/cce2802f-0aef-4d33-8a30-56df59b7cceb)
+open the sky130A techfile using gedit, and search for cifmaxwidth and make the changes as shown in the pictures below.
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/36ef0072-2723-469b-beed-9b4876124293)
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/45194eac-2ec6-4a70-ad82-452d01976e03)
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/6dc89c78-a5b6-4a40-ab68-43fac06382ba)
