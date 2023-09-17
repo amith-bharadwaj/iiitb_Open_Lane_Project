@@ -428,9 +428,10 @@ Now tap using nsubstrate contact, we can see the change in the drc value shown.
 
 </details>
     
+<details>
+    
 <summary>DAY-4</summary>
 
-<details>
     
 # Timing Analysis and Clock Tree Synthesis
 
