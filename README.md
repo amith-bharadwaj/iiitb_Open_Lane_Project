@@ -645,7 +645,7 @@ Layout in magic tool post routing can be seen below:
 
 #### Preprocessed Route Guides
 
-ritonRoute performs the initial detailed route while giving due respect to preprocessed route guides, which are obtained after the global/fast route. The adherence to these guides is a crucial aspect. This involves a series of actions:
+Triton Route performs the initial detailed route while giving due respect to preprocessed route guides, which are obtained after the global/fast route. The adherence to these guides is a crucial aspect. This involves a series of actions:
 
 Initial Route Guide Analysis: TritonRoute scrutinizes the directions specified in the preferred route guides. If any non-directional routing guides are identified, it decomposes them into unit widths.
 
