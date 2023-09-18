@@ -501,7 +501,8 @@ run_placement
 ```
 Let us invoke magic from the results/placement directory
 
-![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/35bb6f08-f83b-4a70-8438-ad89f5793dce)
+![Screenshot from 2023-09-18 17-16-10](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/bbdc2a2f-4418-480d-89a6-974f9a3b7643)
+
 
 ## Timing Analysis
 
