@@ -640,7 +640,6 @@ Layout in magic tool post routing can be seen below:
 
 ![image](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/58a47157-5906-4765-a4bc-80b22f4ceb1a)
 
-![Screenshot from 2023-09-17 19-38-40](https://github.com/amith-bharadwaj/iiitb_Open_Lane_Project/assets/84613258/71caad31-28e5-4b00-be0f-821274cb4d09)
 
 ### Triton Route Features
 
